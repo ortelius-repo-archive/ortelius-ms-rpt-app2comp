@@ -1,7 +1,7 @@
-FROM python:3.6-slim-buster
-ENV PYTHONUNBUFFERED True
+FROM tiangolo/meinheld-gunicorn-flask:python3.8-alpine3.11
+#ENV PYTHONUNBUFFERED True
 WORKDIR /app
-ADD . /app
+COPY . /app
 RUN pip install -r requirements.txt
-EXPOSE 5000
-CMD ["waitress-serve","--port=5000", "app2comp:app"]
+#EXPOSE 5000
+#CMD ["waitress-serve","--port=5000", "app2comp:app"]
