@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: app2comp # update once the image is pushed to repo.
-  tag: ""
+  repository: quay.io/ortelius/ms-rpt-app2comp # update once the image is pushed to repo.
+  tag: dev-v9.0.0.10-gc0a82a4
 
 nameOverride: ""
 fullnameOverride: ""
