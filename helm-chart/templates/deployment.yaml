@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "helm-chart.name" . }}
+  name: {{ include "helm-chart.fullname" . }}
 spec:
   selector:
     matchLabels:
@@ -21,11 +21,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /capitals
+              path: /
               port: app2compport
           readinessProbe:
             httpGet:
-              path: /capitals
+              path: /
               port: app2compport
 
 

@@ -32,7 +32,5 @@ To run the app locally write \
 To dockerize the app \
 `$ cd ortelius-ms-rpt-app2comp` \
 `$ docker build -t  app2comp:v1 .` \
-By default the docker base image servers the app at port 80 we can bind it \
-to any port we like, like here it is 5000 \
-`$ docker run -it -p 5000:80  app2comp:v1`
+`$ docker run -it app2comp:v1`
 
